@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Jose Escoboso</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #2980b9;
+            --text: #333;
+            --light-text: #666;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background: #fdfdfd;
+            margin: 0;
+            padding: 40px;
+            max-width: 850px; /* A4 width approx */
+            margin: 0 auto;
+        }
+
+        /* Layout */
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--light-text);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .role {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.05rem;
+        }
+
+        .period {
+            font-style: italic;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+
+        .company {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .job p {
+            margin: 0;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        /* Summary */
+        .summary {
+            font-size: 1rem;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #eee;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #444;
+            font-weight: 500;
+            border: 1px solid #ddd;
+        }
+
+        /* Education */
+        .edu-item {
+            margin-bottom: 10px;
+        }
+        
+        .edu-degree {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .edu-school {
+            color: var(--light-text);
+        }
+
+        /* Print Specifics */
+        @media print {
+            @page {
+                margin: 0;
+            }
+            body {
+                padding: 2.5cm; /* Compensate for margin: 0 */
+                background: white;
+            }
+            .no-print {
+                display: none;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            .header-top {
+                margin-top: -50px;
+            }
+            .technical-skills {
+                margin-top: 50px; /* Add spacing if it falls on a new page */
+                padding-top: 40px;
+                page-break-before: auto; /* Allow natural break, or use 'always' if you want it on a new page */
+            }
+        }
+
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .btn-print:hover {
+            background: var(--secondary);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <button class="btn-print no-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+    <header>
+        <div class="header-top">
+            <div>
+                <h1>Jose Escoboso</h1>
+                <div class="title">Software Engineer &middot; Hybrid Mobile Developer</div>
+            </div>
+        </div>
+        <div class="contact-info">
+            <span>📧 joseemzt@gmail.com</span>
+            <span>🔗 linkedin.com/in/jose-gabriel-escoboso</span>
+            <span>💻 github.com/JoseGE</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <div class="summary">
+            Software Engineer specialized in frontend and hybrid mobile development, with strong experience delivering scalable, secure, and high-quality applications for enterprise and fintech environments.
+            Core strengths include <strong>Angular</strong>, <strong>Ionic</strong>, <strong>TypeScript</strong>, <strong>RxJS</strong>, and <strong>Clean Architecture</strong>.
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="role">Software Developer Engineer</span>
+                <span class="period">Sept 2021 – Present</span>
+            </div>
+            <div class="company">Consultec-TI</div>
+            <p>
+                Part of a multidisciplinary Agile team developing <strong>secure and high-performance</strong> banking applications.
+                Key contributions include modernization of critical processes (loan origination, credit card onboarding)
+                and integrating biometrics. Applied <strong>Clean Architecture</strong> to ensure maintainability and long-term scalability.
+            </p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="role">Full Stack Developer</span>
+                <span class="period">Mar 2019 – Sept 2021</span>
+            </div>
+            <div class="company">CyberTropic S.R.L</div>
+            <p>
+                Contributed to architecture and core development of web/mobile apps using PHP (CodeIgniter), MySQL, Angular, and Ionic.
+                Delivered hybrid solutions with native integrations (GPS, camera, printers) and managed IIS server configurations.
+                Provided mentorship to junior developers and improved engineering workflows.
+            </p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="role">Mobile Developer</span>
+                <span class="period">Feb 2017 – Mar 2019</span>
+            </div>
+            <div class="company">CyberTropic S.R.L</div>
+            <p>
+                Developed hybrid mobile applications using Ionic Framework for internal operations and user-facing features.
+                Experimented with <strong>Flutter</strong> during its early adoption stage for internal projects.
+            </p>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="role">Web Developer</span>
+                <span class="period">2014 – 2017</span>
+            </div>
+            <div class="company">IPSRD</div>
+            <p>
+                Developed and maintained e-commerce portals using PHP, WordPress, HTML5, CSS3, and JS.
+            </p>
+        </div>
+    </section>
+
+    <section class="technical-skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <span class="skill-tag">Ionic</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">RxJS</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Capacitor</span>
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">Unit Testing (Jasmine/Karma)</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Biometrics</span>
+            <span class="skill-tag">Flutter</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="edu-item">
+            <div class="edu-degree">Degree in Software Engineering</div>
+            <div class="edu-school">Instituto Tecnológico de Santo Domingo (2018 – 2021)</div>
+        </div>
+        <div class="edu-item">
+            <div class="edu-degree">Software Technologist</div>
+            <div class="edu-school">ITLA Instituto Tecnológico de las Americanas (2015 – 2017)</div>
+        </div>
+    </section>
+
+</body>
+</html>

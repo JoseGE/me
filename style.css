@@ -519,3 +519,184 @@ footer {
         left: 14px;
     }
 }
+
+.print-contact-info {
+    display: none;
+}
+
+@media print {
+    /* Remove browser default headers/footers (URL, Date, Title) */
+    @page {
+        margin: 0;
+    }
+
+    /* Hide non-printable elements */
+    #projects,
+    nav,
+    #bg-canvas,
+    #back-to-top,
+    .menu-toggle,
+    .cta-btn,
+    footer,
+    .project-card,
+    #contact {
+        display: none !important;
+    }
+
+    /* Print Contact Info visibility */
+    .print-contact-info {
+        display: block !important;
+        margin-top: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #333;
+        margin-bottom: 20px;
+    }
+    
+    .print-contact-info p {
+        font-size: 10pt !important;
+        color: #333 !important;
+    }
+
+    /* Layout Adjustments */
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        overflow: visible !important;
+        padding: 2.5cm !important; /* Add padding to simulate margins since @page is 0 */
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Hero Section - Compact */
+    .hero {
+        height: auto !important;
+        padding: 20px 0 10px 0 !important;
+        display: block !important;
+        text-align: left !important;
+        margin-bottom: 0 !important;
+    }
+
+    .hero-content h1 {
+        font-size: 24pt !important;
+        color: #000 !important;
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+    }
+    
+    .hero-content p {
+        color: #333 !important;
+        font-size: 11pt !important;
+        text-align: left !important;
+        max-width: 100% !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* Experience Section - Reduce Gap */
+    section {
+        padding: 10px 0 !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .section-title h2 {
+        color: #000 !important;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 14pt !important;
+    }
+
+    .timeline {
+        margin: 0 !important;
+        padding: 0 0 0 15px !important;
+        max-width: none !important;
+    }
+
+    .timeline::before {
+        background: #ccc !important;
+        left: 0 !important;
+        width: 1px !important;
+    }
+
+    .timeline-item {
+        opacity: 1 !important;
+        transform: none !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+        page-break-inside: avoid;
+    }
+    
+    .timeline-role {
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        margin-bottom: 2px !important;
+    }
+
+    .timeline-company {
+        margin-bottom: 5px !important;
+        font-size: 10pt !important;
+    }
+
+    .timeline-date {
+        font-size: 9pt !important;
+        color: #555 !important;
+        margin-bottom: 2px !important;
+    }
+
+    .timeline p {
+        font-size: 10pt !important;
+        line-height: 1.4 !important;
+    }
+    
+    .timeline-dot {
+        left: -5px !important;
+        width: 10px !important;
+        height: 10px !important;
+        background: #000 !important;
+        box-shadow: none !important;
+        border: 1px solid #fff;
+    }
+
+    .card, .skill-card {
+        background: none !important;
+        border: 1px solid #ccc !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        padding: 8px !important;
+        page-break-inside: avoid;
+        margin-bottom: 10px !important;
+    }
+
+    .skill-name {
+        color: #000 !important;
+        font-weight: normal;
+        font-size: 9pt !important;
+    }
+    
+    .skills-grid {
+        gap: 10px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .skill-card {
+        flex: 0 0 auto !important;
+    }
+    
+    /* Typography Overrides */
+    h1, h2, h3, h4, p, span, div, strong {
+        color: #000 !important;
+        text-shadow: none !important;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: #000 !important;
+    }
+}
