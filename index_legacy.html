@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Escoboso — Hybrid Mobile Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav>
+    <div class="container nav-content">
+      <div class="logo">JE</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Hi, I'm <span class="highlight">Jose Escoboso</span></h1>
+      <h2 id="typing-text"
+        style="min-height: 1.2em; margin-bottom: 20px; font-weight: 400; color: var(--secondary-color);"></h2>
+      <p>
+        Software Engineer specialized in frontend and hybrid mobile development, with strong experience delivering scalable, secure, and high-quality applications for enterprise and fintech environments.
+        Core strengths include <strong>Angular</strong>, <strong>Ionic</strong>, <strong>TypeScript</strong>, <strong>RxJS</strong>, and <strong>Clean Architecture</strong>.
+      </p>
+      
+      <div class="print-contact-info">
+        <p>Email: joseemzt@gmail.com • LinkedIn: linkedin.com/in/jose-gabriel-escoboso • GitHub: github.com/JoseGE</p>
+      </div>
+
+      <div class="hero-btns">
+          <a href="#contact" class="cta-btn">Get In Touch</a>
+          <a href="cv.html" class="cta-btn" style="background: transparent; border: 2px solid var(--accent-color); margin-left: 10px;">View CV / Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="experience">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+
+
+
+        <!-- Consultec TI -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Sept 2021 – Present</span>
+          <h3 class="timeline-role">Software Developer Engineer</h3>
+          <div class="timeline-company">Consultec-TI</div>
+          <p>
+            Part of a multidisciplinary Agile team developing <strong>secure and high-performance</strong> banking applications.
+            Key contributions include modernization of critical processes (loan origination, credit card onboarding)
+            and integrating biometrics. Applied <strong>Clean Architecture</strong> to ensure maintainability and long-term scalability.
+          </p>
+        </div>
+
+        <!-- Cyber Espacio Tropical - Full Stack -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Mar 2019 – Sept 2021</span>
+          <h3 class="timeline-role">Full Stack Developer</h3>
+          <div class="timeline-company">CyberTropic S.R.L</div>
+          <p>
+            Contributed to architecture and core development of web/mobile apps using PHP (CodeIgniter), MySQL, Angular, and Ionic.
+            Delivered hybrid solutions with native integrations (GPS, camera, printers) and managed IIS server configurations.
+            Provided mentorship to junior developers and improved engineering workflows.
+          </p>
+        </div>
+
+        <!-- Cyber Espacio Tropical - Mobile -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Feb 2017 – Mar 2019</span>
+          <h3 class="timeline-role">Mobile Developer</h3>
+          <div class="timeline-company">CyberTropic S.R.L</div>
+          <p>
+            Developed hybrid mobile applications using Ionic Framework for internal operations and user-facing features.
+            Experimented with <strong>Flutter</strong> during its early adoption stage for internal projects.
+          </p>
+        </div>
+
+        <!-- IPSRD -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2014 – 2017</span>
+          <h3 class="timeline-role">Web Developer</h3>
+          <div class="timeline-company">IPSRD</div>
+          <p>
+            Developed and maintained e-commerce portals using PHP, WordPress, HTML5, CSS3, and JS.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Banking App</h3>
+            <p>Next-gen banking application with secure transactions and real-time updates. Built with Angular & Ionic.
+            </p>
+            <div class="project-tags">
+              <span>Angular</span>
+              <span>Ionic</span>
+              <span>TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3>E-Commerce Portal</h3>
+            <p>High-performance e-commerce solution with custom CMS and payment gateway integration.</p>
+            <div class="project-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
+      </div>
+
+      <h3 style="margin-bottom: 20px; color: var(--secondary-color);">Mobile & Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-name">Ionic</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Angular</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">RxJS</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">React</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Capacitor</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">TypeScript</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">HTML5 & CSS3</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--secondary-color);">Backend & Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-name">NestJS</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Node.js</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">PHP / CodeIgniter</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">MySQL</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Clean Architecture</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Unit Testing (Jasmine/Karma)</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Biometrics Integration</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Flutter</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="card">
+        <h3>Degree in Software Engineering</h3>
+        <p class="timeline-company">Instituto Tecnológico de Santo Domingo (2018 – 2021)</p>
+      </div>
+      <div class="card">
+        <h3>Software Technologist</h3>
+        <p class="timeline-company">ITLA Instituto Tecnológico de las Americanas (2015 – 2017)</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+      </div>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto;">
+        I'm currently open to remote or hybrid roles. Feel free to reach out if you'd like to discuss a project or
+        opportunity.
+      </p>
+
+      <div class="contact-grid">
+        <a href="mailto:joseemzt@gmail.com" class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <div>joseemzt@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/JoseGE" target="_blank" class="contact-item">
+          <span class="contact-icon">💻</span>
+          <div>
+            <strong>GitHub</strong>
+            <div>github.com/JoseGE</div>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jose-gabriel-escoboso/" target="_blank" class="contact-item">
+          <span class="contact-icon">🔗</span>
+          <div>
+            <strong>LinkedIn</strong>
+            <div>Connect on LinkedIn</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Jose Escoboso. Built with HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
