@@ -194,7 +194,23 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         
-        .btn-print:hover {
+        .btn-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background: var(--light-text);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .btn-back:hover {
             background: var(--secondary);
         }
     </style>
@@ -202,6 +218,7 @@
 </head>
 <body>
 
+    <a href="v2.html" class="btn-back no-print">⬅ Back to Portfolio</a>
     <button class="btn-print no-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
 
     <header>
@@ -212,9 +229,9 @@
             </div>
         </div>
         <div class="contact-info">
-            <span>📧 joseemzt@gmail.com</span>
-            <span>🔗 linkedin.com/in/jose-gabriel-escoboso</span>
-            <span>💻 github.com/JoseGE</span>
+            <span>📧 <a href="mailto:joseemzt@gmail.com">joseemzt@gmail.com</a></span>
+            <span>🔗 <a href="https://linkedin.com/in/jose-gabriel-escoboso">linkedin.com/in/jose-gabriel-escoboso</a></span>
+            <span>💻 <a href="https://github.com/JoseGE">github.com/JoseGE</a></span>
         </div>
     </header>
 
