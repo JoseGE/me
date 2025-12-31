@@ -6,6 +6,7 @@
     <title>CV - Jose Escoboso | Ingeniero de Software Senior</title>
     <meta name="description" content="Curriculum Vitae de Jose Escoboso. Ingeniero de Software Senior experto en Angular, Ionic y Sistemas Bancarios.">
     <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Jose Escoboso, Ingeniero de Software, Angular, Ionic, TypeScript, RxJS, Clean Architecture, Sistemas Bancarios, Desarrollador Web, Desarrollador Móvil">
     <style>
         :root {
             --primary: #2c3e50;
@@ -61,6 +62,7 @@
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
+            font-style: normal;
         }
 
         .contact-info span {
@@ -130,6 +132,9 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         .skill-tag {
@@ -241,6 +246,25 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jose Escoboso",
+      "jobTitle": "Ingeniero de Software Senior",
+      "description": "Ingeniero de Software Senior experto en Angular, Ionic y Sistemas Bancarios.",
+      "email": "mailto:joseemzt@gmail.com",
+      "sameAs": [
+        "https://linkedin.com/in/jose-gabriel-escoboso",
+        "https://github.com/JoseGE"
+      ],
+      "knowsAbout": [
+        "Ionic", "Angular", "TypeScript", "RxJS", "React", "Capacitor", 
+        "Clean Architecture", "Unit Testing", "NestJS", "Node.js", 
+        "PHP", "MySQL", "Biometrics", "Flutter"
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -255,11 +279,11 @@
                 <div class="title">Ingeniero de Software &middot; Desarrollador Móvil Híbrido</div>
             </div>
         </div>
-        <div class="contact-info">
+        <address class="contact-info">
             <span>📧 <a href="mailto:joseemzt@gmail.com">joseemzt@gmail.com</a></span>
             <span>🔗 <a href="https://linkedin.com/in/jose-gabriel-escoboso">linkedin.com/in/jose-gabriel-escoboso</a></span>
             <span>💻 <a href="https://github.com/JoseGE">github.com/JoseGE</a></span>
-        </div>
+        </address>
     </header>
 
     <section>
@@ -273,7 +297,7 @@
     <section>
         <h2>Experiencia Laboral</h2>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
                 <span class="role">Ingeniero de Desarrollo de Software</span>
                 <span class="period">Sept 2021 – Presente</span>
@@ -284,9 +308,9 @@
                 Contribuciones clave incluyen la modernización de procesos críticos (originación de préstamos, incorporación de tarjetas de crédito)
                 e integración de biometría. Apliqué <strong>Clean Architecture</strong> para asegurar la mantenibilidad y escalabilidad a largo plazo.
             </p>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
                 <span class="role">Desarrollador Full Stack</span>
                 <span class="period">Mar 2019 – Sept 2021</span>
@@ -297,9 +321,9 @@
                 Entregué soluciones híbridas con integraciones nativas (GPS, cámara, impresoras) y gestioné configuraciones de servidor IIS.
                 Brindé mentoría a desarrolladores junior y mejoré los flujos de trabajo de ingeniería.
             </p>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
                 <span class="role">Desarrollador Móvil</span>
                 <span class="period">Feb 2017 – Mar 2019</span>
@@ -309,9 +333,9 @@
                 Desarrollé aplicaciones móviles híbridas usando Ionic Framework para operaciones internas y funciones orientadas al usuario.
                 Experimenté con <strong>Flutter</strong> durante su etapa temprana de adopción para proyectos internos.
             </p>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
                 <span class="role">Desarrollador Web</span>
                 <span class="period">2014 – 2017</span>
@@ -320,39 +344,39 @@
             <p>
                 Desarrollé y mantuve portales de comercio electrónico usando PHP, WordPress, HTML5, CSS3 y JS.
             </p>
-        </div>
+        </article>
     </section>
 
     <section class="technical-skills">
         <h2>Habilidades Técnicas</h2>
-        <div class="skills-container">
-            <span class="skill-tag">Ionic</span>
-            <span class="skill-tag">Angular</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">RxJS</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Capacitor</span>
-            <span class="skill-tag">Clean Architecture</span>
-            <span class="skill-tag">Unit Testing (Jasmine/Karma)</span>
-            <span class="skill-tag">NestJS</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">Biometrics</span>
-            <span class="skill-tag">Flutter</span>
-        </div>
+        <ul class="skills-container">
+            <li class="skill-tag">Ionic</li>
+            <li class="skill-tag">Angular</li>
+            <li class="skill-tag">TypeScript</li>
+            <li class="skill-tag">RxJS</li>
+            <li class="skill-tag">React</li>
+            <li class="skill-tag">Capacitor</li>
+            <li class="skill-tag">Clean Architecture</li>
+            <li class="skill-tag">Unit Testing (Jasmine/Karma)</li>
+            <li class="skill-tag">NestJS</li>
+            <li class="skill-tag">Node.js</li>
+            <li class="skill-tag">PHP</li>
+            <li class="skill-tag">MySQL</li>
+            <li class="skill-tag">Biometrics</li>
+            <li class="skill-tag">Flutter</li>
+        </ul>
     </section>
 
     <section>
         <h2>Educación</h2>
-        <div class="edu-item">
+        <article class="edu-item">
             <div class="edu-degree">Licenciatura en Ingeniería de Software</div>
             <div class="edu-school">Instituto Tecnológico de Santo Domingo (2018 – 2021)</div>
-        </div>
-        <div class="edu-item">
+        </article>
+        <article class="edu-item">
             <div class="edu-degree">Tecnólogo en Software</div>
             <div class="edu-school">ITLA Instituto Tecnológico de las Américas (2015 – 2017)</div>
-        </div>
+        </article>
     </section>
 
 </body>
